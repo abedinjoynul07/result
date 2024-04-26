@@ -178,4 +178,4 @@ def index():
     return render_template_string(template, universities=universities, teams=teams)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False, port=5020, host='0.0.0.0')
